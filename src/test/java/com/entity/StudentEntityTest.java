@@ -18,9 +18,10 @@ public class StudentEntityTest {
     @Test
     public void testGet(){
         StudentEntity studentEntity = hibernateTemplate.get(StudentEntity.class, 1);
-        studentEntity.setName("tom");
-        hibernateTemplate.update(studentEntity);
-        //System.out.println(studentEntity);
+        //studentEntity.setName("tom");
+
+        //hibernateTemplate.update(studentEntity);
+        System.out.println(studentEntity);
 
     }
 }
